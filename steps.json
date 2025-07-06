@@ -1,0 +1,19 @@
+{
+  "base": "/Users/terencehegarty/projects/hegarty/eks/us-east-1/",
+  "apply": [
+    "networking/vpc",
+    "networking/internet_gateway",
+    "networking/nat",
+    "networking/routes/public",
+    "networking/routes/controller",
+    "networking/routes/worker"
+  ],
+  "destroy": [
+    "networking/routes/public",
+    "networking/routes/controller",
+    "networking/routes/worker",
+    "networking/nat",
+    "networking/internet_gateway",
+    "networking/vpc"
+  ]
+}
