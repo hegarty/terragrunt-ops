@@ -2,6 +2,7 @@
   "base": "/Users/terencehegarty/projects/hegarty/eks/us-east-1/",
   "apply": [
     "networking/vpc",
+    "eks/security_groups",
     "networking/internet_gateway",
     "networking/nat",
     "networking/routes/public",
@@ -14,6 +15,7 @@
     "networking/routes/worker",
     "networking/nat",
     "networking/internet_gateway",
+    "eks/security_groups",
     "networking/vpc"
   ]
 }
