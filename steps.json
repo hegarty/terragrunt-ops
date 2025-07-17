@@ -7,9 +7,13 @@
     "networking/nat",
     "networking/routes/public",
     "networking/routes/controller",
-    "networking/routes/worker"
+    "networking/routes/worker",
+    "eks/cluster",
+    "eks/node_group"
   ],
   "destroy": [
+    "eks/node_group",
+    "eks/cluster",
     "networking/routes/public",
     "networking/routes/controller",
     "networking/routes/worker",
